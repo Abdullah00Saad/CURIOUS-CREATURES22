@@ -784,8 +784,14 @@ span {
   color: #2C847B;
 }
 
+.card-img {
+  width: 100px !important;
+  height: 100px !important;
+}
 
-
+.serv-cards {
+height: 200px !important;
+}
 
 .phone-footer {
   width: 50%;
@@ -2515,3 +2521,178 @@ footer h6:after {
               font-family: 'Montserrat';
               font-weight: 300;
           }
+
+
+
+  .title-service {
+    width: 70% !important;
+  }
+
+
+  .services-box {
+    width: 80% !important;
+    margin-left: 15% !important;
+
+  }
+
+
+
+
+
+
+
+  :root {
+    --surface-color: #2c847bf1;
+    --curve: 15;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+ 
+  
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin: 4rem 5vw;
+    padding: 0;
+    list-style-type: none;
+  }
+  
+  .card {
+    position: relative;
+    display: block;
+    height: 90%;  
+    border-radius: calc(var(--curve) * 1px);
+    overflow: hidden;
+    text-decoration: none;
+  }
+  
+  .card__image {      
+    width: 110%;
+    height: auto;
+  }
+  
+  .card__overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;      
+    border-radius: calc(var(--curve) * 1px);    
+    background-color: var(--surface-color);      
+    transform: translateY(100%);
+    transition: .2s ease-in-out;
+
+  }
+  
+  .card:hover .card__overlay {
+    transform: translateY(0);
+  }
+  
+  .card__header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 2em;
+    padding: 2em;
+    border-radius: calc(var(--curve) * 1px) 0 0 0;    
+    background-color: var(--surface-color);
+    transform: translateY(-100%);
+    transition: .2s ease-in-out;
+  }
+  
+  .card__arc {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    bottom: 100%;
+    right: 0;      
+    z-index: 1;
+  }
+  
+  .card__arc path {
+    fill: var(--surface-color);
+    d: path("M 40 80 c 22 0 40 -22 40 -40 v 40 Z");
+  }       
+  
+  .card:hover .card__header {
+    transform: translateY(0);
+  }
+  
+  .card__thumb {
+    flex-shrink: 0;
+    width: 50px;
+    height: 50px;      
+    border-radius: 50%;      
+  }
+  
+  .card__title {
+    font-size: 22px;
+    margin: 0 0 .3em;
+    color: #ffffff;
+  }
+  
+  .card__tagline {
+    display: block;
+    margin: 1em 0;
+
+    font-size: .8em; 
+    color: #ffffff;  
+  }
+  
+  .card__status {
+    font-size: 18px;
+    color: #ffffff;
+   margin-left: -10px;
+  }
+  
+  .card__description {
+    padding: 0 2em 2em;
+    margin: 0;
+    color: #ffffff;
+ 
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+  }    
+
+
+
+
+
+ 
+  .card-horizontal {
+  
+    display: flex;
+    flex: 1 1 auto;
+
+
+}
+
+.service-cards {
+  margin-left: 17%;
+
+}
+
+.card-ss {
+  background-color: #ededede1;
+}
+.card-title {
+  font-size: 28px;
+  color: #263441;
+  margin-left: 8px;
+}
+
+.card-text {
+  font-size: 22px;
+  margin-left: 8px;
+  color: #2C847B;
+}
+
+.serv-adress {
+  font-size: 15px;
+}
