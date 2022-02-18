@@ -1,0 +1,236 @@
+#work_fullname,
+#work_email,
+#work_password,
+#work_number,
+#work_address,
+#member_name,
+#member_email,
+#member_password,
+#member_number,
+#member_address {
+    border: none;
+    border-bottom: 0.9px solid #858585;
+    width: -webkit-fill-available;
+}
+
+.sign_up-buttons .button-18{
+    background-color: #2C847B;
+    border: 2px solid #2C847B;
+    border-radius: 8px;
+    color: #FFFFFF!important;
+}
+
+.sign_up-buttons .button-18:hover,
+.button-18:focus {
+    background-color: #ebebebd6!important;
+    color: #2C847B!important;
+}
+
+.sign_up-buttons .button-18:active {
+    background: #ebebebd6!important;
+    color: #2C847B!important;
+}
+
+.sign-up .modal-content
+{
+    background-color: #fdfdfdd6;
+    border: 1px solid rgb(0,0,0,0.07);
+    border-radius: 14px;
+
+}
+
+.sign-up .modal-header {
+    border-bottom: 1px solid #6c757d00;
+    padding: 1.5rem;
+}
+
+.sign-up input{
+    background-color: #ebebeb00;
+}
+
+.sign-up input::placeholder{
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 14px;
+    font-style: initial;
+}
+
+.sign-up .modal-dialog-signup{
+    max-width: 1000px!important;
+}
+
+.sign-up .custom-border {
+    position: relative;
+}
+
+.sign-up .custom-border:after {
+    content: " ";
+    position: absolute;
+    border-left: 1px #B4B4B4 solid;
+    top: 20%;
+    right: 0;
+    height: 60%;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.sign-up .block-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 100%; }
+.sign-up .block-wrap > div {
+    width: 100%;
+    text-align: center; }
+
+.sign-up .btn-google, .btn-fb {
+    display: inline-block;
+    border-radius: 1px;
+    text-decoration: none;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.25);
+    transition: background-color .218s, border-color .218s ,box-shadow .218s; }
+.sign-up .btn-google .google-content, .btn-google .fb-content, .btn-fb .google-content, .btn-fb .fb-content {
+    display: flex;
+    align-items: center;
+    width: 300px;
+    height: 50px; }
+.sign-up .btn-google .google-content .logo, .btn-google .fb-content .logo, .btn-fb .google-content .logo, .btn-fb .fb-content .logo {
+    padding: 15px;
+    height: inherit; }
+.sign-up .btn-google .google-content svg, .btn-google .fb-content svg, .btn-fb .google-content svg, .btn-fb .fb-content svg {
+    width: 18px;
+    height: 18px; }
+.sign-up .btn-google .google-content p, .btn-google .fb-content p, .btn-fb .google-content p, .btn-fb .fb-content p {
+    width: 100%;
+    line-height: 1;
+    letter-spacing: .21px;
+    text-align: center;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif; }
+
+.sign-up .btn-google {
+    background: #FFF; }
+.sign-up .btn-google:hover {
+    box-shadow: 0 0 3px 3px rgba(66, 133, 244, 0.3); }
+.sign-up .btn-google:active {
+    background-color: #eee; }
+.sign-up .btn-google .google-content p {
+    color: #757575; }
+
+.sign-up .btn-fb {
+    padding-top: 1.5px;
+    background: #4267b2;
+    background-color: #3b5998; }
+.sign-up .btn-fb:hover {
+    box-shadow: 0 0 3px 3px rgba(59, 89, 152, 0.3); }
+.sign-up .btn-fb .fb-content p {
+    color: rgba(255, 255, 255, 0.87)!important; }
+
+.sign-up .modal-title{
+    font-size: 22px;
+}
+
+.sign-up strong{
+    color: #667685!important;
+
+}
+
+.sign-up h5{
+    font-weight: 600;
+}
+
+.sign-up .modal-footer{
+    border-top: 1px solid #c9cccf00;
+}
+
+.sign-up .modal-footer-apply{
+    justify-content: center;
+
+}
+.sign-up .log-in-ref{
+    color: #2C847B!important;
+    font-size: 16px;
+}
+
+.sign-up .inputfile {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+.sign-up .inputfile + label {
+    max-width: 80%;
+    font-size: 1rem;
+    /* 20px */
+    font-weight: 700;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: pointer;
+    display: inline-block;
+    overflow: hidden;
+    padding: 0.625rem 1.25rem;
+    /* 10px 20px */
+}
+
+.sign-up .no-js .inputfile + label {
+    display: none;
+}
+
+.sign-up .inputfile:focus + label,
+.inputfile.has-focus + label {
+    outline: 1px dotted #000;
+    outline: -webkit-focus-ring-color auto 5px;
+}
+
+.sign-up .inputfile + label * {
+    /* pointer-events: none; */
+    /* in case of FastClick lib use */
+    color: #4e4e4ead!important;
+}
+
+.sign-up .inputfile + label svg {
+    width: 1em;
+    height: 1em;
+    vertical-align: middle;
+    fill: #4e4e4ead!important;
+    margin-top: -0.25em;
+    /* 4px */
+    margin-right: 0.25em;
+    /* 4px */
+}
+.sign-up .inputfile-2 + label {
+    color: #4e4e4ead!important;
+    background-color: #c3c3c3;
+    line-height: 20px;
+    border-radius: 8px;
+
+
+}
+
+.sign-up .inputfile-2:focus + label,
+.inputfile-2.has-focus + label,
+.inputfile-2 + label:hover {
+    color: #722040;
+}
+
+.sign-up textarea{
+    padding: 10px;
+    background-color: #c3c3c3;
+    border: 0;
+    border-radius: 8px;
+}
+
+.sign-up textarea::placeholder{
+    color: #4e4e4ead!important;
+    font-size: 14px;
+    font-style: initial;
+}
+
+.sign-up select{
+    background-color: #c3c3c3;
+    border: 0;
+    padding: 6px;
+    border-radius: 8px;
+}
