@@ -5,10 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-
-
-
-
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/bootstrap.css">
@@ -51,96 +47,17 @@
     <link rel="stylesheet" href="./css/sub.css" />
 
 
-
-    <!-- --------------------- -->
-
+    <!----------- start ------------->
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <title>adopting</title>
-    <script>
-        $(document).ready(function () {
-            $("#myBtn").click(function () {
-                $("#exampleModalToggle").modal("show");
-            });
-        });
-    </script>
-
-
-
-
-
-
-    <!--  -->
-    <script>
-        $(document).ready(function () {
-            $("#myBtn2").click(function () {
-                $("#exampleModalToggle2").modal("show");
-            });
-        });
-    </script>
-    <!--  -->
-
-
-
-
-
-    <!--  -->
-
-
-
-
-    <script>
-        $(document).ready(function () {
-            $("#myBtn3").click(function () {
-                $("#exampleModalToggle3").modal("show");
-            });
-        });
-    </script>
-
-
-
-    <script>
-        $(document).ready(function () {
-            $("#myBtn4").click(function () {
-                $("#exampleModalToggle4").modal("show");
-            });
-        });
-    </script>
 </head>
 
 <body>
-
-    <!-- nav -->
     <header>
-        <!---- ------------------------- navbar -- --------------------------->
+        <!-- ------------------------------------------------------------------- navbar -------------------------------------------------------------------- -->
+
         <div class="logo">
+
             <!-- header inner -->
             <div class="header-top">
                 <div class="header">
@@ -166,8 +83,13 @@
                                                 <li class="active"> <a id="white-nav" href="index.html">Home</a>
                                                 </li>
 
-                                                <li> <a id="white-nav" href="get in touch.html">contact us</a> </li>
-                                                <li> <a id="white-nav" href="#sign_in">sign in</a> </li>
+                                                <li> <a class="signhover" id="white-nav"
+                                                        href="get in touch.html">contact us</a>
+
+
+                                                </li>
+                                                <li> <a id="white-nav" data-bs-toggle="modal" href="#exampleModalToggle"
+                                                        role="button" href="#sign_in">sign up</a> </li>
                                                 <li>
 
                                                 </li>
@@ -181,29 +103,313 @@
                 </div>
             </div>
         </div>
+        <div class="sign-up">
+            <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
+                tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalToggleLabel">Sign up as:</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body sign_up-buttons" style="display: flex;">
+                            <button class="button-18" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal"
+                                data-bs-dismiss="modal" style="flex: 50%; margin-right: 25px;">member</button>
+                            <button class="button-18" data-bs-target="#exampleModalToggle3" data-bs-toggle="modal"
+                                data-bs-dismiss="modal" style="flex: 50%;">worker</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
+            <div class="modal fade" id="exampleModalToggle2" aria-hidden="true"
+                aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-signup">
+                    <div class="modal-content">
+                        <div class="row" style="align-items: center;">
+                            <div class="col-md-6 custom-border" style="padding: 30px;">
+
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalToggleLabel2"><strong>Sign up as a
+                                            Member:</strong></h5>
+                                </div>
+                                <div class="modal-body sign_up-buttons">
+                                    <form action="" style="display: flex; flex-direction: column; flex-wrap: wrap;">
+                                        <input type="username" name="username" id="work_fullname"
+                                            placeholder="Full Name">
+                                        <br>
+                                        <input type="username" name="username" id="work_email"
+                                            placeholder="Email Address">
+                                        <br>
+                                        <input type="password" name="username" id="work_password"
+                                            placeholder="Password">
+                                        <br>
+                                        <input type="username" name="username" id="work_number"
+                                            placeholder="Phone Number">
+                                        <br>
+                                        <input type="username" name="username" id="work_address" placeholder="Address">
+                                        <br>
+                                        <label>
+                                            <input type="checkbox">
+                                            I Accept the Terms And Conditions.
+                                        </label>
+                                        <br>
+                                        <button class="button-18" role="button"
+                                            style="flex: 100%; width: 50%; line-height: 30px;">Create Account</button>
+                                        <br>
+                                        <span>already have an account? <a href="#exampleModalToggle-login"
+                                                class="log-in-ref" data-bs-toggle="modal" role="button"
+                                                onclick="showFunction()">Log in</a></span>
+                                        <br>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="col-md-6" style="padding: 30px;">
+                                <div class="modal-header">
+                                </div>
+                                <div class="modal-body" style="display: flex;
+                                                                flex-direction: column;
+                                                                flex-wrap: wrap;
+                                                                align-items: center;">
+                                    <h5 class="modal-title"><strong>Or Sign Up via</strong></h5>
+                                    <br>
+                                    <div class="block-wrap">
+                                        <!-- google	 -->
+                                        <div>
+                                            <a class="btn-google" href="">
+                                                <div class="google-content">
+                                                    <div class="logo">
+                                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                            viewBox="0 0 48 48">
+                                                            <defs>
+                                                                <path id="a"
+                                                                    d="M44.5 20H24v8.5h11.8C34.7 33.9 30.1 37 24 37c-7.2 0-13-5.8-13-13s5.8-13 13-13c3.1 0 5.9 1.1 8.1 2.9l6.4-6.4C34.6 4.1 29.6 2 24 2 11.8 2 2 11.8 2 24s9.8 22 22 22c11 0 21-8 21-22 0-1.3-.2-2.7-.5-4z" />
+                                                            </defs>
+                                                            <clipPath id="b">
+                                                                <use xlink:href="#a" overflow="visible" />
+                                                            </clipPath>
+                                                            <path clip-path="url(#b)" fill="#FBBC05"
+                                                                d="M0 37V11l17 13z" />
+                                                            <path clip-path="url(#b)" fill="#EA4335"
+                                                                d="M0 11l17 13 7-6.1L48 14V0H0z" />
+                                                            <path clip-path="url(#b)" fill="#34A853"
+                                                                d="M0 37l30-23 7.9 1L48 0v48H0z" />
+                                                            <path clip-path="url(#b)" fill="#4285F4"
+                                                                d="M48 48L17 24l-4-3 35-10z" />
+                                                        </svg>
+                                                    </div>
+                                                    <p>Sign in with Google</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <br><br><br><br>
+                                        <!-- facebook	 -->
+                                        <div>
+                                            <a class="btn-fb" href="">
+                                                <div class="fb-content">
+                                                    <div class="logo">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                                                            viewBox="0 0 32 32" version="1">
+                                                            <path fill="#FFFFFF"
+                                                                d="M32 30a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h28a2 2 0 0 1 2 2v28z" />
+                                                            <path fill="#4267b2"
+                                                                d="M22 32V20h4l1-5h-5v-2c0-2 1.002-3 3-3h2V5h-4c-3.675 0-6 2.881-6 7v3h-4v5h4v12h5z" />
+                                                        </svg>
+                                                    </div>
+                                                    <p>Sign in with Facebook</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <br><br>
+                                    <img src="images/duck.png">
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="modal-footer sign_up-buttons">
+                            <button class="button-18" style="background-color: #2C847B; color: white;"
+                                data-bs-target="#exampleModalToggle" data-bs-toggle="modal"
+                                data-bs-dismiss="modal">Back</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="exampleModalToggle3" aria-hidden="true"
+                aria-labelledby="exampleModalToggleLabel3" tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-signup">
+                    <div class="modal-content">
+                        <div class="row" style="align-items: center;">
+                            <div class="col-md-6 custom-border" style="padding: 30px;">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalToggleLabel3">Sign up as a Worker:</h5>
+                                </div>
+                                <div class="modal-body sign_up-buttons">
+                                    <form action="" style="display: flex; flex-direction: column; flex-wrap: wrap;">
+                                        <input type="username" name="username" id="work_fullname"
+                                            placeholder="Full Name">
+                                        <br>
+                                        <input type="username" name="username" id="work_email"
+                                            placeholder="Email Address">
+                                        <br>
+                                        <input type="password" name="username" id="work_password"
+                                            placeholder="Password">
+                                        <br>
+                                        <input type="username" name="username" id="work_number"
+                                            placeholder="Phone Number">
+                                        <br>
+                                        <input type="username" name="username" id="work_address" placeholder="Address">
+                                        <br>
+                                        <label for="profession"></label><select name="profession" id="profession">
+                                            <option value="Profession" selected disabled>Profession..</option>
+                                            <option value="aaa">aaa</option>
+                                            <option value="bbb">bbb</option>
+                                            <option value="ccc">ccc</option>
+                                        </select>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="col-md-6" style="padding: 30px;">
+                                <div class="modal-header">
+                                </div>
+                                <div class="modal-body" style="display: flex;
+                                                                flex-direction: column;
+                                                                flex-wrap: wrap;">
+                                    <label style="padding: 18px; font-size:18px">
+                                        why did you choose to work with us?
+                                        <textarea placeholder="type here ..." rows="5" cols="40"></textarea>
+                                    </label>
+                                    <div style="padding: 18px; font-size:18px">
+                                        <input style="padding-right: 30px !important;" type="file" name="file-2[]"
+                                            id="file-2" class="inputfile inputfile-2 p-4"
+                                            data-multiple-caption="{count} files selected" multiple />
+                                        <label style="width: 60%; line-height: 12px;" for="file-2"><svg
+                                                xmlns="http://www.w3.org/2000/svg" width="20" height="17"
+                                                viewBox="0 0 20 17">
+                                                <path
+                                                    d="M10 0l-5.2 4.9h3.3v5.1h3.8v-5.1h3.3l-5.2-4.9zm9.3 11.5l-3.2-2.1h-2l3.4 2.6h-3.5c-.1 0-.2.1-.2.1l-.8 2.3h-6l-.8-2.2c-.1-.1-.1-.2-.2-.2h-3.6l3.4-2.6h-2l-3.2 2.1c-.4.3-.7 1-.6 1.5l.6 3.1c.1.5.7.9 1.2.9h16.3c.6 0 1.1-.4 1.3-.9l.6-3.1c.1-.5-.2-1.2-.7-1.5z" />
+                                            </svg> <span style="padding: 18px; font-size:18px">upload your
+                                                cv&hellip;</span></label>
+                                    </div>
+
+                                    <label style="padding: 18px; font-size:18px">
+                                        <input type="checkbox">
+                                        I Accept the Terms And Conditions.
+                                    </label>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="modal-footer sign_up-buttons modal-footer-apply">
+                            <button class="button-18" style="background-color: #2C847B; color: white;"
+                                data-bs-target="#exampleModalToggle" data-bs-toggle="modal"
+                                data-bs-dismiss="modal">apply</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="log-in">
+
+
+            <div class="modal fade" id="exampleModalToggle-login" aria-hidden="true"
+                aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-signup">
+                    <div class="modal-content">
+                        <div class="row" style="align-items: center; padding: 30px;">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalToggleLabel2-login"><strong>Log In</strong></h5>
+
+                            </div>
+                            <div class="modal-body log-in-buttons">
+                                <form action=""
+                                    style="display: flex; flex-direction: column; flex-wrap: wrap; align-items: center;">
+                                    <input type="username" name="username" id="work_email" placeholder="Email Address">
+                                    <br>
+                                    <input type="password" name="username" id="work_password" placeholder="Password">
+                                    <br>
+                                    <button class="button-18" role="button"
+                                        style="flex: 100%; width: 50%; line-height: 30px;">Log In</button>
+                                    <br>
+
+                                </form>
+                                <div class="row-log-in-via"
+                                    style="display: flex; flex-direction: column; flex-wrap: wrap; align-items: center;">
+
+                                    <h5 class="modal-title"><strong>Or Log In via</strong></h5>
+                                    <br>
+                                    <div class="block-wrap">
+                                        <!-- google	 -->
+                                        <a class="btn-google" href="">
+                                            <div class="google-content">
+                                                <div class="logo">
+                                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                                        xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 48 48">
+                                                        <defs>
+                                                            <path id="a"
+                                                                d="M44.5 20H24v8.5h11.8C34.7 33.9 30.1 37 24 37c-7.2 0-13-5.8-13-13s5.8-13 13-13c3.1 0 5.9 1.1 8.1 2.9l6.4-6.4C34.6 4.1 29.6 2 24 2 11.8 2 2 11.8 2 24s9.8 22 22 22c11 0 21-8 21-22 0-1.3-.2-2.7-.5-4z" />
+                                                        </defs>
+                                                        <clipPath id="b">
+                                                            <use xlink:href="#a" overflow="visible" />
+                                                        </clipPath>
+                                                        <path clip-path="url(#b)" fill="#FBBC05" d="M0 37V11l17 13z" />
+                                                        <path clip-path="url(#b)" fill="#EA4335"
+                                                            d="M0 11l17 13 7-6.1L48 14V0H0z" />
+                                                        <path clip-path="url(#b)" fill="#34A853"
+                                                            d="M0 37l30-23 7.9 1L48 0v48H0z" />
+                                                        <path clip-path="url(#b)" fill="#4285F4"
+                                                            d="M48 48L17 24l-4-3 35-10z" />
+                                                    </svg>
+                                                </div>
+                                                <p>Sign in with Google</p>
+                                            </div>
+                                        </a>
+                                        <br><br>
+                                        <!-- facebook	 -->
+                                        <a class="btn-fb" href="">
+                                            <div class="fb-content">
+                                                <div class="logo">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                                                        viewBox="0 0 32 32" version="1">
+                                                        <path fill="#FFFFFF"
+                                                            d="M32 30a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h28a2 2 0 0 1 2 2v28z" />
+                                                        <path fill="#4267b2"
+                                                            d="M22 32V20h4l1-5h-5v-2c0-2 1.002-3 3-3h2V5h-4c-3.675 0-6 2.881-6 7v3h-4v5h4v12h5z" />
+                                                    </svg>
+                                                </div>
+                                                <p>Sign in with Facebook</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="modal-footer sign_up-buttons">
+                                        <button class="button-18"
+                                            style="border-color:#2C847B !important; background-color:rgba(255, 255, 255, 0.419); color: rgb(40, 83, 102) !important;"
+                                            data-bs-target="#exampleModalToggle" data-bs-toggle="modal"
+                                            data-bs-dismiss="modal">Back</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
     </header>
     <br>
-
-
-
-    <!-- nav -->
-
     <br>
+    <!-- ------------------------------------------------------------------- swiper -------------------------------------------------------------------- -->
 
     <div class="adopting-page">
-
-
-
-
-
         <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-
-
         </head>
 
         <body>
-            <!-- Swiper -->
+
 
 
             <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper">
@@ -254,6 +460,7 @@
 
 
 
+            <!-- ------------------------------------------------------------------- filters -------------------------------------------------------------------- -->
 
 
             <!-- <section class="services-box" style="margin: 50px">
@@ -441,6 +648,8 @@
         
             </section>
  -->
+            <!-- ------------------------------------------------------------------- cards -------------------------------------------------------------------- -->
+
             <div class="service-cards container-fluid">
                 <div class="row ">
                     <div class="col-8 mt-3">
@@ -523,7 +732,7 @@
             </div>
 
 
-            <!--  footer -->
+            <!-- ------------------------------------------------------------------- footer -------------------------------------------------------------------- -->
             <footer style="color: aliceblue !important;" class="container-fluid bg-grey py-5">
                 <div class="container">
                     <div class="row">
@@ -607,6 +816,9 @@
                 </div>
             </footer>
             <!-- end footer -->
+
+            <!-- ------------------------------------------------------------------- js -------------------------------------------------------------------- -->
+
             <script>
                 $(document).ready(function () {
                     $('.dropdown-toggle').dropdown();
@@ -643,8 +855,85 @@
                     },
                 });
             </script>
+            <script>
+                function showFunction() {
+
+                    $('#exampleModalToggle2').modal('toggle');
+                    // $("#exampleModalToggle .close").click()
+                    //
+                    // $("#exampleModalToggle2 .close").click()
+                }
+            </script>
+            <script>
+                $(document).ready(function () {
+                    $("#myBtn").click(function () {
+                        $("#exampleModalToggle").modal("show");
+                    });
+                });
+            </script>
+            <script>
+                $(document).ready(function () {
+                    $("#myBtn2").click(function () {
+                        $("#exampleModalToggle2").modal("show");
+                    });
+                });
+            </script>
+            <script>
+                $(document).ready(function () {
+                    $("#myBtn3").click(function () {
+                        $("#exampleModalToggle3").modal("show");
+                    });
+                });
+            </script>
+            <script>
+                $(document).ready(function () {
+                    $("#myBtn4").click(function () {
+                        $("#exampleModalToggle4").modal("show");
+                    });
+                });
+        
+            </script>
+        
+            <title>pet care services</title>
+            <script>
+                $(document).ready(function () {
+                    $("#myBtn").click(function () {
+                        $("#exampleModalToggle").modal("show");
+                    });
+                });
+            </script>
+        
+        
+        
+        
+        
+        
+            <!--  -->
+            <script>
+                $(document).ready(function () {
+                    $("#myBtn2").click(function () {
+                        $("#exampleModalToggle2").modal("show");
+                    });
+                });
+            </script>
+
+    <script>
+        $(document).ready(function () {
+            $("#myBtn3").click(function () {
+                $("#exampleModalToggle3").modal("show");
+            });
+        });
+    </script>
 
 
+
+    <script>
+        $(document).ready(function () {
+            $("#myBtn4").click(function () {
+                $("#exampleModalToggle4").modal("show");
+            });
+        });
+    </script>
         </body>
 
 </html>
