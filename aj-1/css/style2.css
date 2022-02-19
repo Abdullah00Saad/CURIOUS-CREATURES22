@@ -451,7 +451,7 @@ body a:hover {
   margin-right: auto;
   margin-left: auto;
   height: 220px;
-  background-image: url('/Users/dhay/Desktop/final code/kk.png');
+  background-image: url('/Users/dhay/Desktop/aj-1/images/kk.png');
   border-radius: 10px;
   color: white;
   font-family: Asul;
@@ -1050,65 +1050,6 @@ margin-right: 200px; */
 
 }
 
-.col1 {
-  background-image: url('/Users/dhay/Desktop/final code/lily.png');
-  width: 22%;
-  background-repeat: no-repeat;
-  font-family: Poppins;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 27px;
-  line-height: 40px;
-
-
-  text-transform: capitalize;
-
-  color: #FFFFFF;
-
-}
-
-
-.col2 {
-  background-image: url('/Users/dhay/Desktop/final code/max.png');
-  width: 22%;
-  background-repeat: no-repeat;
-  font-family: Poppins;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 27px;
-  line-height: 40px;
-
-
-  text-transform: capitalize;
-
-  color: #FFFFFF;
-}
-
-.col3 {
-  background-image: url('/Users/dhay/Desktop/final code/lucy.png');
-  width: 22%;
-  background-repeat: no-repeat;
-  font-family: Poppins;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 27px;
-  line-height: 40px;
-
-
-  text-transform: capitalize;
-
-  color: #FFFFFF;
-}
-
-
-.names {
-
-  margin-top: 100%;
-  width: 80%;
-  transform: translateX(5vw);
-
-
-}
 
 
 
@@ -2269,7 +2210,9 @@ footer h6:after {
   bottom: -20px;
 }
 
-
+footer {
+  font-size: 20px !important;
+}
 
 
 
@@ -3417,4 +3360,204 @@ body a {
 
 .home-page #login-modal .modal-content form {
   margin-bottom: 10px;
+}
+
+
+
+
+
+
+
+.courses-container {
+
+  margin-left: 20%;
+  margin-right: auto;
+
+}
+
+.course {
+	background-color: rgb(245, 243, 243);
+	border-radius: 10px;
+	box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+	display: flex;
+	max-width: 100%;
+	margin: 20px;
+	overflow: hidden;
+	width: 800px;
+}
+
+.course h6 {
+	opacity: 0.6;
+	margin: 0;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+
+.course h2 {
+	letter-spacing: 1px;
+	margin: 10px 0;
+}
+
+.course-preview {
+	background-color: #384C5F;
+	color: #fff;
+	padding: 30px;
+	max-width: 250px;
+}
+
+.course-preview a {
+	color: #fff;
+	display: inline-block;
+	font-size: 12px;
+	opacity: 0.6;
+	margin-top: 30px;
+	text-decoration: none;
+}
+
+.course-info {
+	padding: 30px;
+	position: relative;
+	width: 100%;
+}
+
+
+
+
+
+
+.btn-contactt {
+	background-color: #2C847B;
+	border: 0;
+	border-radius: 20px;
+	box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+	color: #fff;
+	font-size: 16px;
+	padding: 12px 25px;
+	position: absolute;
+	bottom: 50px;
+	right: 30px;
+	letter-spacing: 1px;
+}
+
+
+
+
+@media screen and (max-width: 992px) {
+  .btn-contactt  {
+   padding: 10px;
+   font-size: 10px;
+   margin-left: 100px;
+display: none;
+  }
+
+}
+
+@media screen and (max-width: 992px) {
+  
+  .courses-container {
+  
+    margin-left: 0px;
+  }
+  .course {
+    width: 90%;
+  }
+  
+}
+.b444 {
+  display: none;
+    }
+
+
+@media screen and (max-width: 992px) {
+  .b444 {
+display: block;
+margin-right: 66%;
+margin-bottom: -100px;
+width: max-content;
+  }
+}
+
+
+
+.btn-contactt:hover {
+	background-color: #1f5c56;
+  transition: ease-in-out 0.3s;
+}
+
+
+
+
+/* filters */
+
+
+.filters-section {
+  padding: 20px;
+  width: 1280px;
+  margin: 40px auto;
+
+}
+
+.filters-section ul {
+  display: flex;
+  margin-bottom: 10px;
+
+}
+
+.filters-section ul li {
+  list-style: none;
+  background-color: #f5f5f5;
+  padding: 8px 40px;
+  margin: 5px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-right: 50px;
+  font-size: large;
+
+  
+}
+.filters-section h2 {
+  margin-top: 15px;
+  margin-right: 20px;
+}
+/* .filters-section ul li.active {
+  background-color: rgb(47, 115, 118);
+  color: white;
+} */
+
+@media (max-width: 900px) {
+  .filters-section{
+   display: flex;
+   flex-wrap: wrap;
+   width: 99.9%;
+   overflow: scroll;
+
+  }
+  .filters-section h2{ 
+display: none;
+ 
+   }
+   .filters-section .list  {
+    font-size: 10px;
+    height: 40px;
+   }
+   .itemBox  {
+     margin-left: 80px !important;
+   }
+}
+
+.itemBox {
+  position: relative;
+  width: 300px;
+
+  margin: 5px;
+}
+
+.itemBox img {
+  /* position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  object-fit: cover; */
+  
 }
