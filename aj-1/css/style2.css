@@ -1,11 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Asul&display=swap');
 
-/* * {
-  padding: 0;
-  
-  box-sizing: border-box;
-} */
 
 body {
 
@@ -3444,10 +3439,7 @@ body a {
   margin-right: 20px;
 }
 
-/* .filters-section ul li.active {
-  background-color: rgb(47, 115, 118);
-  color: white;
-} */
+
 
 @media (max-width: 900px) {
   .filters-section {
@@ -3480,11 +3472,4 @@ body a {
   margin: 5px;
 }
 
-.itemBox img {
-  /* position: absolute;
-  height: 100%;
-  width: 100%;
-  top: 0;
-  object-fit: cover; */
 
-}
